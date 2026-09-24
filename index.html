@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Prompt', sans-serif;
-            background: linear-gradient(135deg, #FFD8EE 0%, #D7E9FF 100%);
+            background: #FEEEF5;
             min-height: 100vh;
         }
         
@@ -165,7 +165,7 @@
                             เลขบัญชีตามนี้เลยค่า
                             <svg class="w-4 h-4 text-pink-400 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         </span>
-                        <br>ชื่อบัญชี <span class="text-pink-500 font-bold bg-pink-50/80 px-2.5 py-0.5 rounded-lg border border-pink-100 relative inline-block">
+                        <br>ชื่อบัญชี <span style="color: #EAA8C8;" class="font-bold bg-pink-50/80 px-2.5 py-0.5 rounded-lg border border-pink-100 relative inline-block">
                             Phaenphan P.
                             <svg class="absolute -top-2 -right-2.5 w-4 h-4 text-pink-400 anim-float-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                         </span> เท่านั้นน้า!!
@@ -186,11 +186,11 @@
                     <div class="h-px bg-pink-100 flex-1"></div>
                 </div>
 
-                <!-- โซนบัญชีธนาคาร (ใช้สี #FED6EC ทั้งหมด) -->
+                <!-- โซนบัญชีธนาคาร (สลับสี #FFCED และ #FFD8F1) -->
                 <div class="space-y-4">
                     
                     <!-- กรุงไทย (Krungthai) -->
-                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FED6EC;" onclick="copyText('5470769429', this, 'ktb')">
+                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFCED;" onclick="copyText('5470769429', this, 'ktb')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
                                 <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
@@ -209,7 +209,7 @@
                     </div>
 
                     <!-- ไทยพาณิชย์ (SCB) -->
-                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FED6EC;" onclick="copyText('4086534348', this, 'scb')">
+                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFD8F1;" onclick="copyText('4086534348', this, 'scb')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
                                 <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
@@ -228,7 +228,7 @@
                     </div>
 
                     <!-- ทรูมันนี่ (True Wallet) -->
-                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FED6EC;" onclick="copyText('0615420724', this, 'true')">
+                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFCED;" onclick="copyText('0615420724', this, 'true')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
                                 <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
@@ -246,8 +246,8 @@
                         </div>
                     </div>
 
-                    <!-- เพิ่มช่อง Note slips ซื้อขายกับ Lebovny -->
-                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FED6EC;" onclick="copyText('ซื้อขายกับ Lebovny', this, 'noteText')">
+                    <!-- Note slips ซื้อขายกับ Lebovny -->
+                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFD8F1;" onclick="copyText('ซื้อขายกับ Lebovny', this, 'noteText')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
                                 <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
@@ -265,11 +265,11 @@
                         </div>
                     </div>
 
-                    <!-- กล่องข้อความน่ารักๆ เตือนโน้ตสลิปและโอนเพิ่ม 1 บาท -->
+                    <!-- กล่องข้อความแจ้งเตือน (เอาอักษรพิเศษออกแล้ว) -->
                     <div class="relative bg-gradient-to-br from-pink-100/90 to-pink-50/90 rounded-[20px] p-3.5 border-2 border-dashed border-pink-300 shadow-sm z-10 text-center">
                         <div class="text-[13px] font-bold text-pink-600 leading-relaxed">
-                            𓈒.   ♡    ลืม݂โน้ต โอนเพิ่ม 1฿<br>
-                            พร้อ݂มโน้ตสลิป݁ 𓈒 น݁ะคะ   ݂͙♡𓈒ׂ
+                            ลืมโน้ตสลิป โอนเพิ่ม 1 บาท<br>
+                            พร้อมโน้ตสลิปนะคะ
                         </div>
                     </div>
 
