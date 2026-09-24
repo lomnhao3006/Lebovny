@@ -45,12 +45,12 @@
         .anim-spin { animation: spin-slow 8s linear infinite; }
 
         .glass-card {
-            background: linear-gradient(135deg, rgba(255, 216, 238, 0.6) 0%, rgba(215, 233, 255, 0.6) 100%);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 20px 50px -10px rgba(215, 150, 190, 0.2), 
-                        inset 0 2px 10px rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 1);
+            box-shadow: 0 20px 50px -10px rgba(244, 114, 182, 0.15), 
+                        inset 0 2px 10px rgba(255, 255, 255, 0.5);
         }
 
         .virtual-card {
@@ -186,72 +186,72 @@
                     <div class="h-px bg-pink-100 flex-1"></div>
                 </div>
 
-                <!-- โซนบัญชีธนาคาร -->
+                <!-- โซนบัญชีธนาคาร (เปลี่ยนเป็นโทนสีพาสเทลชมพู-ฟ้า FFD8EE / D7E9FF) -->
                 <div class="space-y-4">
                     
                     <!-- กรุงไทย (Krungthai) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-blue-500 to-blue-600 rounded-[24px] p-5 shadow-lg shadow-blue-500/20 overflow-hidden cursor-pointer border border-blue-400/30" onclick="copyText('5470769429', this, 'ktb')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#FFD8EE] to-[#D7E9FF] rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" onclick="copyText('5470769429', this, 'ktb')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
-                                <div class="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-                                    <span class="text-white font-bold text-sm tracking-wider">Krungthai</span>
+                                <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
+                                    <span class="text-brown-600 font-bold text-sm tracking-wider">Krungthai</span>
                                 </div>
-                                <button class="ktb-btn bg-white text-blue-600 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
+                                <button class="ktb-btn bg-white text-pink-500 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
                                     คัดลอก
                                 </button>
                             </div>
                             <div class="mt-2">
-                                <div class="text-cream-50/90 text-[11px] font-medium mb-1 drop-shadow-sm">กรุงไทย (Phaenphan P.)</div>
-                                <div class="text-white font-bold text-[22px] tracking-widest leading-none drop-shadow-md">547-0-76942-9</div>
+                                <div class="text-brown-500 text-[11px] font-medium mb-1">กรุงไทย (Phaenphan P.)</div>
+                                <div class="text-brown-600 font-bold text-[22px] tracking-widest leading-none drop-shadow-sm">547-0-76942-9</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- ไทยพาณิชย์ (SCB) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-purple-700 to-purple-800 rounded-[24px] p-5 shadow-lg shadow-purple-800/20 overflow-hidden cursor-pointer border border-purple-500/30" onclick="copyText('4086534348', this, 'scb')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#FFD8EE] to-[#D7E9FF] rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" onclick="copyText('4086534348', this, 'scb')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
-                                <div class="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-                                    <span class="text-white font-bold text-sm tracking-wider">SCB</span>
+                                <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
+                                    <span class="text-brown-600 font-bold text-sm tracking-wider">SCB</span>
                                 </div>
-                                <button class="scb-btn bg-white text-purple-700 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
+                                <button class="scb-btn bg-white text-pink-500 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
                                     คัดลอก
                                 </button>
                             </div>
                             <div class="mt-2">
-                                <div class="text-cream-50/90 text-[11px] font-medium mb-1 drop-shadow-sm">ไทยพาณิชย์ (Phaenphan P.)</div>
-                                <div class="text-white font-bold text-[22px] tracking-widest leading-none drop-shadow-md">408-653434-8</div>
+                                <div class="text-brown-500 text-[11px] font-medium mb-1">ไทยพาณิชย์ (Phaenphan P.)</div>
+                                <div class="text-brown-600 font-bold text-[22px] tracking-widest leading-none drop-shadow-sm">408-653434-8</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- ทรูมันนี่ (True Wallet) -->
-                    <div class="virtual-card relative bg-gradient-to-br from-orange-400 to-orange-500 rounded-[24px] p-5 shadow-lg shadow-orange-500/20 overflow-hidden cursor-pointer border border-orange-300/50" onclick="copyText('0615420724', this, 'true')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#FFD8EE] to-[#D7E9FF] rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" onclick="copyText('0615420724', this, 'true')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
-                                <div class="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-                                    <span class="text-white font-bold text-sm tracking-wider">True Wallet</span>
+                                <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
+                                    <span class="text-brown-600 font-bold text-sm tracking-wider">True Wallet</span>
                                 </div>
-                                <button class="true-btn bg-white text-orange-500 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
+                                <button class="true-btn bg-white text-pink-500 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
                                     คัดลอก
                                 </button>
                             </div>
                             <div class="mt-2">
-                                <div class="text-cream-50/90 text-[11px] font-medium mb-1 drop-shadow-sm">ทรูมันนี่ (Phaenphan P.)</div>
-                                <div class="text-white font-bold text-[22px] tracking-widest leading-none drop-shadow-md">061-542-0724</div>
+                                <div class="text-brown-500 text-[11px] font-medium mb-1">ทรูมันนี่ (Phaenphan P.)</div>
+                                <div class="text-brown-600 font-bold text-[22px] tracking-widest leading-none drop-shadow-sm">061-542-0724</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- เพิ่มช่อง Note slips ซื้อขายกับ Lebovny -->
-                    <div class="virtual-card relative bg-gradient-to-br from-pink-400 to-pink-500 rounded-[24px] p-5 shadow-lg shadow-pink-500/20 overflow-hidden cursor-pointer border border-pink-300/50" onclick="copyText('ซื้อขายกับ Lebovny', this, 'noteText')">
+                    <div class="virtual-card relative bg-gradient-to-br from-[#FFD8EE] to-[#D7E9FF] rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" onclick="copyText('ซื้อขายกับ Lebovny', this, 'noteText')">
                         <div class="relative z-10 flex flex-col gap-4">
                             <div class="flex justify-between items-center">
-                                <div class="bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20">
-                                    <span class="text-white font-bold text-sm tracking-wider">Note Slips</span>
+                                <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
+                                    <span class="text-brown-600 font-bold text-sm tracking-wider">Note Slips</span>
                                 </div>
                                 <button class="noteText-btn bg-white text-pink-500 text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -259,8 +259,8 @@
                                 </button>
                             </div>
                             <div class="mt-2">
-                                <div class="text-cream-50/90 text-[11px] font-medium mb-1 drop-shadow-sm">ข้อความสำหรับใส่โน้ตสลิป</div>
-                                <div class="text-white font-bold text-[18px] tracking-wider leading-none drop-shadow-md">ซื้อขายกับ Lebovny</div>
+                                <div class="text-brown-500 text-[11px] font-medium mb-1">ข้อความสำหรับใส่โน้ตสลิป</div>
+                                <div class="text-brown-600 font-bold text-[18px] tracking-wider leading-none drop-shadow-sm">ซื้อขายกับ Lebovny</div>
                             </div>
                         </div>
                     </div>
@@ -269,7 +269,7 @@
                     <div class="relative bg-gradient-to-br from-pink-100/90 to-pink-50/90 rounded-[20px] p-3.5 border-2 border-dashed border-pink-300 shadow-sm z-10 text-center">
                         <div class="text-[13px] font-bold text-pink-600 leading-relaxed">
                             𓈒.   ♡    ลืม݂โน้ต โอนเพิ่ม 1฿<br>
-                            พร้อ݂มโน้ตสลิป݁ 𓈒 น݁ะคะ    ݂͙♡𓈒ׂ
+                            พร้อ݂มโน้ตสลิป݁ 𓈒 น݁ะคะ   ݂͙♡𓈒ׂ
                         </div>
                     </div>
 
@@ -319,21 +319,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                     สำเร็จ
                 `;
-                buttonElement.classList.replace('bg-white', 'bg-white/20');
-                buttonElement.classList.replace('text-blue-600', 'text-white');
-                buttonElement.classList.replace('text-purple-700', 'text-white');
-                buttonElement.classList.replace('text-orange-500', 'text-white');
-                buttonElement.classList.replace('text-pink-500', 'text-white');
+                buttonElement.classList.replace('bg-white', 'bg-white/40');
+                buttonElement.classList.replace('text-pink-500', 'text-brown-600');
                 
                 setTimeout(() => {
                     buttonElement.innerHTML = originalHtml;
-                    buttonElement.classList.replace('bg-white/20', 'bg-white');
-                    let originalTextColor = 'text-pink-500';
-                    if (type === 'ktb') originalTextColor = 'text-blue-600';
-                    if (type === 'scb') originalTextColor = 'text-purple-700';
-                    if (type === 'true') originalTextColor = 'text-orange-500';
-                    if (type === 'noteText') originalTextColor = 'text-pink-500';
-                    buttonElement.classList.add(originalTextColor);
+                    buttonElement.classList.replace('bg-white/40', 'bg-white');
+                    buttonElement.classList.add('text-pink-500');
                 }, 2000);
 
             } catch (err) {
