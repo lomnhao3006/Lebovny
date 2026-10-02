@@ -100,7 +100,7 @@
 </head>
 <body class="flex flex-col items-center py-6 px-4 text-brown-600 relative overflow-x-hidden">
 
-    <!-- Background Decorative SVGs (ดาวพื้นหลังขนาดใหญ่) -->
+    <!-- Background Decorative SVGs -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <svg class="absolute top-[3%] left-[5%] w-14 h-14 text-pink-300 anim-float-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         <svg class="absolute top-[12%] left-[2%] w-10 h-10 text-white/80 anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -143,13 +143,13 @@
             <svg class="absolute top-[25%] -right-3 w-7 h-7 text-pink-200 anim-float-2 z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             <svg class="absolute bottom-[40%] -left-3 w-5 h-5 text-pink-400 anim-spin z-20 drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
 
-            <!-- รูปภาพ (พร้อมกรอบเส้นประวิ่ง) -->
+            <!-- รูปภาพ (อัปเดตลิงก์ใหม่เรียบร้อย) -->
             <div class="relative p-2 rounded-[36px] z-10">
                 <svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" rx="34" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-dasharray="12 12" stroke-linecap="round" class="animate-dash" />
                 </svg>
                 <div class="rounded-[28px] overflow-hidden relative shadow-sm border-[4px] border-white">
-                    <img src="https://lh3.googleusercontent.com/d/1LQK-lN9UBBnoXwUt16QTdZZnfNqEPDk7=s1000" alt="บัญชี Lebovny" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/fce7f3/ec4899?text=Lebovny+Payment'">
+                    <img src="https://lh3.googleusercontent.com/d/1SZxpjAXeE1rzHBl164xS4KAx0cBG4OSa=s1000" alt="บัญชี Lebovny" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x600/fce7f3/ec4899?text=Lebovny+Payment'">
                 </div>
             </div>
 
@@ -183,30 +183,10 @@
                     <div class="h-px bg-pink-100 flex-1"></div>
                 </div>
 
-                <!-- โซนบัญชีธนาคาร (ปรับแต่งมุมดาวไม่ให้ซ้ำกัน) -->
+                <!-- โซนบัญชีธนาคาร (ลบกรุงไทยออก เหลือ SCB, True Wallet, Note Slips) -->
                 <div class="space-y-4">
                     
-                    <!-- 1. กรุงไทย (Krungthai) -> ดาวใหญ่อยู่มุม "บนซ้าย" + รูปทรงหัวใจ -->
-                    <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFBCE6;" onclick="copyText('5470769429', this, 'ktb')">
-                        <svg class="absolute -top-4 -left-4 w-24 h-24 text-white/40 pointer-events-none anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                        <div class="relative z-10 flex flex-col gap-4">
-                            <div class="flex justify-between items-center">
-                                <div class="bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/60 shadow-sm">
-                                    <span class="text-brown-600 font-bold text-sm tracking-wider">Krungthai</span>
-                                </div>
-                                <button style="color: #EAA8C8;" class="ktb-btn bg-white text-[12px] font-bold px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm pointer-events-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                                    คัดลอก
-                                </button>
-                            </div>
-                            <div class="mt-2">
-                                <div class="text-brown-500 text-[11px] font-medium mb-1">กรุงไทย</div>
-                                <div class="text-brown-600 font-bold text-[22px] tracking-widest leading-none drop-shadow-sm">547-0-76942-9</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. ไทยพาณิชย์ (SCB) -> ดาวใหญ่อยู่มุม "บนขวา" + ทรงดาวสปินหมุนเบาๆ -->
+                    <!-- 1. ไทยพาณิชย์ (SCB) -->
                     <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFD8F1;" onclick="copyText('4086534348', this, 'scb')">
                         <svg class="absolute -top-6 -right-6 w-28 h-28 text-white/40 pointer-events-none anim-spin" style="animation-duration: 15s;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         <div class="relative z-10 flex flex-col gap-4">
@@ -226,7 +206,7 @@
                         </div>
                     </div>
 
-                    <!-- 3. ทรูมันนี่ (True Wallet) -> ดาวใหญ่อยู่มุม "ล่างซ้าย" -->
+                    <!-- 2. ทรูมันนี่ (True Wallet) -->
                     <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFBCE6;" onclick="copyText('0615420724', this, 'true')">
                         <svg class="absolute -bottom-6 -left-6 w-32 h-32 text-white/40 pointer-events-none anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         <div class="relative z-10 flex flex-col gap-4">
@@ -246,7 +226,7 @@
                         </div>
                     </div>
 
-                    <!-- 4. Note slips -> ดาวใหญ่อยู่มุม "ล่างขวา" (อันเดิมแต่จัดวางตำแหน่งลงตัว) -->
+                    <!-- 3. Note slips -->
                     <div class="virtual-card relative rounded-[24px] p-5 shadow-lg shadow-pink-300/20 overflow-hidden cursor-pointer border border-white/80" style="background-color: #FFD8F1;" onclick="copyText('ซื้อขายกับ Lebovny', this, 'noteText')">
                         <svg class="absolute -bottom-4 -right-4 w-28 h-28 text-white/40 pointer-events-none anim-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                         <div class="relative z-10 flex flex-col gap-4">
